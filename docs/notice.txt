@@ -1,0 +1,5 @@
+Test fixture for the Verbatim proof. A fictional shop.
+
+Northwind Retail opening hours
+
+Monday to Friday, nine to six. Closed on public holidays.

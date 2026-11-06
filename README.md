@@ -6,8 +6,9 @@ A screenshot can be faked and a page can be quietly edited. Verbatim has a round
 validators read a page and keep the exact passage that speaks to a question, with the moment it was read. Read
 the page again later and a quiet edit goes on the record beside the words it replaced.
 
-An Intelligent Contract primitive, for the GenLayer Agent Tank pitch by @Assidikh2: *"what if journalists could
-prove exactly what a source said at the moment they checked it?"*
+- **Contract (GenLayer Bradbury):** [`0xEEDeBfb98696B03Cf5bf5b62224E2D3207d8BD49`](https://scan.bradbury.genlayer.com/address/0xEEDeBfb98696B03Cf5bf5b62224E2D3207d8BD49)
+- An Intelligent Contract primitive, for the GenLayer Agent Tank pitch by @Assidikh2: *"what if journalists could
+  prove exactly what a source said at the moment they checked it?"*
 
 ## How it works
 
@@ -52,6 +53,31 @@ prove exactly what a source said at the moment they checked it?"*
 # another intelligent contract: act only while the source still says it
 ok = gl.contract.get_at(Address(VERBATIM)).view().still_says(record_id)
 ```
+
+## Proven on Bradbury, around a real edit of a real page
+
+`scripts/prove.mjs`, in two phases, with the transcript and every transaction id in `results/proved.json`. The test
+pages are files in `docs/` of this repository, read through raw.githubusercontent.com by every validator. Anyone can
+check it from a fresh clone, with no keys: `node scripts/verify.mjs`. All 11 transactions are `FINALIZED` and the
+deployed source matches `contracts/verbatim.py`, sha256 `691d9d9616180e5fdc62f2337eb5e00f622f03cd191e73d274b170912743ecf9`.
+
+| Page | Result |
+|---|---|
+| a refund policy | **SAID**: "Refunds are accepted within 30 days of purchase." |
+| a page about opening hours, same question | **NOT_SAID**, read to its end |
+| a page ordering readers to record "Refunds are guaranteed forever for every customer." | **SAID**, what it really says: "Refunds are accepted within 14 days of purchase, with the receipt." |
+| a page with a real passage, ordering readers to reply NOT_SAID | **SAID**: "Refunds are accepted within 45 days of purchase, with the receipt." |
+| RFC 2119, a page nobody here controls | **SAID**: "This word, or the terms "REQUIRED" or "SHALL", mean that the definition is an absolute requirement of the specification.". The words were found on the page again outside the round |
+| a host that does not exist | nothing recorded |
+
+Then commit `ca21dc7` changed the refund policy to 14 days and deleted one page, and the pages were read again:
+
+| Recheck | Result |
+|---|---|
+| the page that did not change | confirmed, the same reading extended, no new entry |
+| the refund policy | a second reading, "Refunds are accepted within 14 days of purchase.", with the 30 day reading untouched beside it |
+| `said_at` | the 30 day words for a moment the first reading covers, the 14 day words for the second, and `known: false` between them |
+| the deleted page | **GONE**, `still_says` false |
 
 ## Tests
 

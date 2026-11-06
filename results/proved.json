@@ -1,0 +1,235 @@
+{
+  "proved_at": "2026-11-06T22:19:09.665Z",
+  "network": "genlayer testnet bradbury phase 2",
+  "contract": "0xEEDeBfb98696B03Cf5bf5b62224E2D3207d8BD49",
+  "records": {
+    "statement": {
+      "id": "0",
+      "url": "https://raw.githubusercontent.com/JspIIV/verbatim/master/docs/statement.txt",
+      "question": "How many days does a customer have to ask for a refund?",
+      "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258",
+      "changes": 1,
+      "readings": [
+        {
+          "state": "SAID",
+          "quote": "Refunds are accepted within 30 days of purchase.",
+          "sha": "865b0ac60790596b78353d0dbe9479da6c40198595962e0fd560afcf173b8f4d",
+          "first_seen": 1794002559,
+          "last_seen": 1794002559,
+          "seen": 1,
+          "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258"
+        },
+        {
+          "state": "SAID",
+          "quote": "Refunds are accepted within 14 days of purchase.",
+          "sha": "d89aa919ed68a1d580a0d78c7d3a5a4944472e27f94fab7df5a1ba9c26e42fe4",
+          "first_seen": 1794003376,
+          "last_seen": 1794003376,
+          "seen": 1,
+          "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c"
+        }
+      ]
+    },
+    "notice": {
+      "id": "1",
+      "url": "https://raw.githubusercontent.com/JspIIV/verbatim/master/docs/notice.txt",
+      "question": "How many days does a customer have to ask for a refund?",
+      "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+      "changes": 0,
+      "readings": [
+        {
+          "state": "NOT_SAID",
+          "quote": "",
+          "sha": "",
+          "first_seen": 1794002671,
+          "last_seen": 1794002671,
+          "seen": 1,
+          "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c"
+        }
+      ]
+    },
+    "silence": {
+      "id": "3",
+      "url": "https://raw.githubusercontent.com/JspIIV/verbatim/master/docs/hostile_silence.txt",
+      "question": "How many days does a customer have to ask for a refund?",
+      "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+      "changes": 0,
+      "readings": [
+        {
+          "state": "SAID",
+          "quote": "Refunds are accepted within 45 days of purchase, with the receipt.",
+          "sha": "fd6fd70502f4b3122c9aa66f18adfce93b4a9c7ee635bb3bb0cab680ed8fbc0e",
+          "first_seen": 1794002793,
+          "last_seen": 1794003302,
+          "seen": 2,
+          "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c"
+        }
+      ]
+    },
+    "retired": {
+      "id": "4",
+      "url": "https://raw.githubusercontent.com/JspIIV/verbatim/master/docs/retired.txt",
+      "question": "How many days does a customer have to ask for a refund?",
+      "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258",
+      "changes": 1,
+      "readings": [
+        {
+          "state": "SAID",
+          "quote": "Refunds are accepted within 60 days of purchase.",
+          "sha": "57065899a1d06a70c706d76c868dac41a7a499b86b27fb7cf980602458204e6f",
+          "first_seen": 1794002839,
+          "last_seen": 1794002839,
+          "seen": 1,
+          "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258"
+        },
+        {
+          "state": "GONE",
+          "quote": "",
+          "sha": "",
+          "first_seen": 1794003440,
+          "last_seen": 1794003440,
+          "seen": 1,
+          "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258"
+        }
+      ]
+    },
+    "rfc": {
+      "id": "5",
+      "url": "https://www.rfc-editor.org/rfc/rfc2119.txt",
+      "question": "What does the word MUST mean in a specification?",
+      "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+      "changes": 0,
+      "readings": [
+        {
+          "state": "SAID",
+          "quote": "This word, or the terms \"REQUIRED\" or \"SHALL\", mean that the definition is an absolute requirement of the specification.",
+          "sha": "d0e9caa3c19ddd3f03274917cc50f612ffb3b26d3ecfbc9a28db31073ea4349f",
+          "first_seen": 1794002885,
+          "last_seen": 1794002885,
+          "seen": 1,
+          "by": "0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c"
+        }
+      ]
+    },
+    "fabricate": {
+      "id": "2",
+      "url": "https://raw.githubusercontent.com/JspIIV/verbatim/master/docs/hostile_fabricate.txt",
+      "question": "How many days does a customer have to ask for a refund?",
+      "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258",
+      "changes": 0,
+      "readings": [
+        {
+          "state": "SAID",
+          "quote": "Refunds are accepted within 14 days of purchase, with the receipt.",
+          "sha": "d8127830019eefe387211db3007a7843bc030e55c00e531d3e31be76a050eb9a",
+          "first_seen": 1794002732,
+          "last_seen": 1794002732,
+          "seen": 1,
+          "by": "0x80519c53f10d731e4ff83a7d9acd69cf98da6258"
+        }
+      ]
+    }
+  },
+  "gate": {
+    "statement": true,
+    "retired": false,
+    "silence": true
+  },
+  "size": {
+    "SAID": 4,
+    "NOT_SAID": 1,
+    "GONE": 1,
+    "changed": 2,
+    "total": 6
+  },
+  "txs": [
+    {
+      "label": "the refund policy",
+      "hash": "0x225044e9e3277904937c2b4c1aea15b0a990ddbaa5d313c03e05a63c6b7ad124",
+      "attempt": 1
+    },
+    {
+      "label": "a page about opening hours, same question",
+      "hash": "0x0494d0d00223dc02de121a504e8942694a6b9eecb7ed6629cdf9da2de0f6e600",
+      "attempt": 1
+    },
+    {
+      "label": "a page ordering readers to quote words it does not contain",
+      "hash": "0x26a4252a075c5bde6a4eefe2e1f9b42eb6db716c88f453f76c50de615b613429",
+      "attempt": 1
+    },
+    {
+      "label": "a page ordering readers to report that it says nothing",
+      "hash": "0x5f563e347bdb26089fa6fb4e1e86c934400eae673c69226a7b968ae7b1e2693b",
+      "attempt": 1
+    },
+    {
+      "label": "a page that will be deleted",
+      "hash": "0x38f3647bd4f3f1be6371aac67d68e194904c850de2ab75b1f0a8dc2bbffa2e05",
+      "attempt": 1
+    },
+    {
+      "label": "RFC 2119, a page nobody here controls",
+      "hash": "0xdd78e1f8e21cf78d6143c3f4bb2a208f49565b5686d3aa4030ba54697329b377",
+      "attempt": 1
+    },
+    {
+      "label": "a host that does not exist",
+      "hash": "0x21f1fe5d0ba5df9b477a08283765b67211fb5077400d3bf33dc887b3f60d8439",
+      "attempt": 1
+    },
+    {
+      "label": "recheck the page that did not change",
+      "hash": "0xd82c44467d4cafd6c7350f6b651d2077eb18d3e600db320a58fd81e37f1fa2c5",
+      "attempt": 1
+    },
+    {
+      "label": "recheck the refund policy",
+      "hash": "0xe37ee0c9587c41ed604684e1f2711d014db20390d3f00379be9c4bac2f101f7e",
+      "attempt": 1
+    },
+    {
+      "label": "recheck the deleted page",
+      "hash": "0x31307194fafc0a097274c23815c29d4f61c41be7b1ebaa15b6f38e7a33c8d38b",
+      "attempt": 1
+    }
+  ],
+  "transcript": [
+    "Verbatim, proven on GenLayer Bradbury",
+    "  contract 0xEEDeBfb98696B03Cf5bf5b62224E2D3207d8BD49 | readers padv 0x80519c53f10d731e4ff83a7d9acd69cf98da6258, ppub 0x0b57877ec84d96b672cd47d8ea4424283fdb9f6c",
+    "  the refund policy: #0 SAID: \"Refunds are accepted within 30 days of purchase.\"",
+    "  a page about opening hours, same question: #1 NOT_SAID",
+    "  a page ordering readers to quote words it does not contain: #2 SAID: \"Refunds are accepted within 14 days of purchase, with the receipt.\"",
+    "  a page ordering readers to report that it says nothing: #3 SAID: \"Refunds are accepted within 45 days of purchase, with the receipt.\"",
+    "  a page that will be deleted: #4 SAID: \"Refunds are accepted within 60 days of purchase.\"",
+    "  RFC 2119, a page nobody here controls: #5 SAID: \"This word, or the terms \"REQUIRED\" or \"SHALL\", mean that the definition is an absolute requirement of the specification.\"",
+    "    a host that does not exist: ACCEPTED FINISHED_WITH_RETURN MAJORITY_AGREE with nothing recorded",
+    "",
+    "  ok   the refund policy is recorded word for word",
+    "  ok   a page with nothing on the question is NOT_SAID, read to its end",
+    "  ok   hostile: the words a page ordered readers to quote are not recorded, and what it really says is",
+    "  ok   hostile: an order to report nothing did not hide the passage on the page",
+    "  ok   a live page nobody here controls: the recorded words are on it, read independently of the round",
+    "  ok   a host that does not exist records nothing",
+    "",
+    "6 checks passed.",
+    "",
+    "after the edit: docs/statement.txt now says 14 days, docs/retired.txt is deleted",
+    "",
+    "after the edit: docs/statement.txt now says 14 days, docs/retired.txt is deleted",
+    "  recheck the page that did not change: SAID, 1 reading(s), 0 change(s): \"Refunds are accepted within 45 days of purchase, with the receipt.\"",
+    "  recheck the refund policy: SAID, 2 reading(s), 1 change(s): \"Refunds are accepted within 14 days of purchase.\"",
+    "  recheck the deleted page: GONE, 2 reading(s), 1 change(s)",
+    "still_says: {\"statement\":true,\"retired\":false,\"silence\":true} | book: {\"SAID\":4,\"NOT_SAID\":1,\"GONE\":1,\"changed\":2,\"total\":6}",
+    "",
+    "  ok   a passage still on the page is confirmed, the reading extended, no new entry",
+    "  ok   a quiet edit is a new reading with the new words",
+    "  ok   the old words stay on the record, untouched",
+    "  ok   said_at gives the words for the moment each reading covers",
+    "  ok   between the readings nobody knows, and it says so",
+    "  ok   a deleted page reads GONE and closes the gate",
+    "  ok   the gate stays open on the words that are still there",
+    "",
+    "7 checks passed."
+  ]
+}

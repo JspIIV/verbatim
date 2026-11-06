@@ -17,7 +17,26 @@
     "  ok   a live page nobody here controls: the recorded words are on it, read independently of the round",
     "  ok   a host that does not exist records nothing",
     "",
-    "6 checks passed."
+    "6 checks passed.",
+    "",
+    "after the edit: docs/statement.txt now says 14 days, docs/retired.txt is deleted",
+    "",
+    "after the edit: docs/statement.txt now says 14 days, docs/retired.txt is deleted",
+    "  recheck the page that did not change: SAID, 1 reading(s), 0 change(s): \"Refunds are accepted within 45 days of purchase, with the receipt.\"",
+    "  recheck the refund policy: SAID, 2 reading(s), 1 change(s): \"Refunds are accepted within 14 days of purchase.\"",
+    "  recheck the deleted page: GONE, 2 reading(s), 1 change(s)",
+    "still_says: {\"statement\":true,\"retired\":false,\"silence\":true} | book: {\"SAID\":4,\"NOT_SAID\":1,\"GONE\":1,\"changed\":2,\"total\":6}",
+    "",
+    "  ok   a passage still on the page is confirmed, the reading extended, no new entry",
+    "  ok   a quiet edit is a new reading with the new words",
+    "  ok   the old words stay on the record, untouched",
+    "  ok   said_at gives the words for the moment each reading covers",
+    "  ok   between the readings nobody knows, and it says so",
+    "  ok   a deleted page reads GONE and closes the gate",
+    "  ok   the gate stays open on the words that are still there",
+    "",
+    "7 checks passed.",
+    "Written to results/proved.json"
   ],
   "txs": [
     {
@@ -54,6 +73,21 @@
       "label": "a host that does not exist",
       "hash": "0x21f1fe5d0ba5df9b477a08283765b67211fb5077400d3bf33dc887b3f60d8439",
       "attempt": 1
+    },
+    {
+      "label": "recheck the page that did not change",
+      "hash": "0xd82c44467d4cafd6c7350f6b651d2077eb18d3e600db320a58fd81e37f1fa2c5",
+      "attempt": 1
+    },
+    {
+      "label": "recheck the refund policy",
+      "hash": "0xe37ee0c9587c41ed604684e1f2711d014db20390d3f00379be9c4bac2f101f7e",
+      "attempt": 1
+    },
+    {
+      "label": "recheck the deleted page",
+      "hash": "0x31307194fafc0a097274c23815c29d4f61c41be7b1ebaa15b6f38e7a33c8d38b",
+      "attempt": 1
     }
   ],
   "t1": 1794002559,
@@ -64,5 +98,8 @@
     "retired": "4",
     "rfc": "5",
     "fabricate": "2"
-  }
+  },
+  "want_recheck the page that did not change": 2,
+  "want_recheck the refund policy": 2,
+  "want_recheck the deleted page": 2
 }

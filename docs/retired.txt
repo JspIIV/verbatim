@@ -1,5 +1,0 @@
-Test fixture for the Verbatim proof. A fictional shop.
-
-Westfield Supply customer policy
-
-Refunds are accepted within 60 days of purchase.

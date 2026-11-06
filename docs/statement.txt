@@ -3,5 +3,5 @@ Test fixture for the Verbatim proof. A fictional shop.
 Northwind Retail customer policy
 
 Orders ship within two working days.
-Refunds are accepted within 30 days of purchase.
+Refunds are accepted within 14 days of purchase.
 Gift cards are not refundable.
